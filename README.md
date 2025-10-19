@@ -28,7 +28,7 @@ Built for the Codepocalypse Hackathon as an ode to the end of the internet.
 ---
 
 ## 🎥 Demo Video
-[Watch the full trailer on Devpost](<your-Devpost-project-link>)
+[Watch the full trailer on Devpost](https://devpost.com/software/download-food)
 
 ---
 
