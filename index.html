@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Download.Food()</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">⭘</span>
+      <h1>Download.Food()<span class="blink">_</span></h1>
+    </div>
+    <div class="status">
+      <span class="wifi" id="wifi"></span>
+      <span id="countdown" title="Server shutdown countdown"></span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Because when the servers die, you still deserve fries.</h2>
+      <p class="sub">Prepared by <strong>CloudChef v0.0.404</strong> — may contain bugs, bytes, and gluten.</p>
+    </section>
+
+    <section class="panel">
+      <form id="orderForm">
+        <label for="craving">Enter craving</label>
+        <div class="row">
+          <input id="craving" name="craving" type="text" placeholder="e.g., spicy ramen with emotional stability" required />
+          <button id="downloadBtn" class="primary" type="submit">Download</button>
+        </div>
+      </form>
+
+      <div class="progress-wrap">
+        <div class="progress" id="progress">
+          <div class="bar" id="bar"></div>
+          <span class="label" id="progressLabel">Idle</span>
+        </div>
+      </div>
+
+      <div class="logs" id="logs" aria-live="polite"></div>
+    </section>
+
+    <section class="faq">
+      <details>
+        <summary>What is this?</summary>
+        <p>A cursed prototype that pretends to download food from the cloud while the internet collapses — with sound, secrets, and emotional ramen.</p>
+      </details>
+      <details>
+        <summary>Who cooks the food?</summary>
+        <p>A half-sentient AI sous-chef trained on expired UberEats data, cursed to cook until the servers melt.</p>
+      </details>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <h3 id="modalTitle">Taste Upload Complete*</h3>
+      <p>* Your stomach may require a firmware update.</p>
+      <button id="modalClose" class="secondary">okay lol</button>
+    </div>
+  </div>
+
+  <div id="foodSpawnContainer"></div>
+
+  <footer class="footer">
+    <small>© 2025 HungerNet Labs — End of Internet Edition</small>
+  </footer>
+
+  <!-- Glowing QR linking to Caroline’s Devpost -->
+  <div class="qr-overlay">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://devpost.com/carolinenkan805" alt="Devpost QR">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
